@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px
+        }
+        .contact{
+            background-color:rgb(68, 153, 47);
+        }
+        .t1{
+            text-align: left;
+        }
+        th,td{
+            padding: 7px;
+        }
+        .product{
+            background-color:rgb(23, 107, 107);
+        }
+        .payment{
+            background-color:darkolivegreen;
+        }
+        .address{
+            background-color: rgb(155, 155, 55);
+        }
+        button{
+            border: none;
+            background-color: rgb(65, 223, 75);
+            margin-left: 650px;
+            margin-top:2px ;
+            padding: 10px;
+            border-radius: 15px;
+            cursor: pointer;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <script>
+        let a = prompt("Whats your age??")
+            a= Number.parseInt(a)
+
+            if (a >=18){
+                alert("your age is valid")
+            }
+            else {
+                (a<18)
+                alert("your age is invalid")
+            }
+    
+    </script>
+    <div style="background-color:cyan">
+    <h1>Land of Box</h1>
+    <form action="">
+        <div class="contact">
+            <table class="t1">
+                <tr>
+                    <th>
+                        <label for="name">Name</label>
+                    </th>
+                    <td> <input type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="address">Address</label>
+                    </th>
+                    <td><input type="text" name="address" id="address"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="pho_no">Phone_no</label>
+                    </th>
+                    <td><input type="mobile" name="phone_no" id="pho_no"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="E-mail">E-male</label>
+                    </th>
+                    <td><input type="E-mail" name="E-mail" id="E-mail"></td>
+                </tr>
+                </table>
+        </div>
+        <div class="product">
+            <table>
+                <tr>
+                    <th>Product_Name</th>
+                    <th>Product_Number</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Amount</th>
+                </tr>
+                <tr>
+                    <td><label for="ebox"></label>Ecno box</td>
+                    <td>#001</td>
+                    <td><input type="number" name="ebox" id="ebox"></td>
+                    <td>5 rs</td>
+                </tr>
+                <tr>
+                    <td><label for="Sbox">Standard box</label></td>
+                    <td>#002</td>
+                    <td><input type="number" name="sbox"  id="sbox"></td>
+                    <td>10 rs</td>
+                </tr>
+                <tr>
+                    <td><label for="pbox">Premium box</label></td>
+                    <td>#003</td>
+                    <td><input type="number" name="pbox" id="pbox"></td>
+                    <td>15 rs</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dbox"></label>Delux box
+                    </td>
+                    <td>#004</td>
+                    <td><input type="number" name="dbox" idw="dbox"></td>
+                    <td>20 rs</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label fotr="sdbox"></label> Super delux box
+                    </td>
+                    <td>#001</td>
+                    <td><input type="number" name="sdbox" id=sdbox></td>
+                    <td>30 rs</td>
+                </tr>
+            </table>
+        </div>
+        <div class="payment">
+            <table>
+                <tr>
+                    <th><label for="">Credit card</label></th>
+                    <td>
+                        <select name="cardtype" id="cardtype">
+                            <option value="">--select card type--</option>
+                            <option value="Visa">Visa</option>
+                            <option value="Mastercard">Master card</option>
+                            <option  value="RuPay">RuPay</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="card Number"> Card number:</label></th>
+                    <td><input type="text" name="card number" id="card number"></td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="exp"> Expiry date</label>
+                        <td>
+                            <input type="text" name="Exp" id="exp">
+                        </td>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div class="Address">
+            <table>
+                <tr>
+                    <th>
+                        <label for="b_address">Billing address</label>
+                    </th>
+                    <td>
+                        <input type="text" name="b_address" id="b_address">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="d_address">Delivery address</label>
+                    </th>
+                    <td>
+                        <input type="text" name="d_addrewss" id="d_address">
+                        <td>
+                            <button type="Submit">Submit</button>
+                        </td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>

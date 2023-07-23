@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo_one" style="display: block">
+            Hello
+    </div>
+    <div id="class_one" style="display: none">
+            Boys
+    </div>
+
+    <button type="button" onclick="myFunction()">
+            Click Here!
+    </button>
+
+    <script>
+        function myFunction() {
+          if  (document.getElementById('demo_one').style.display == 'block'){
+               document.getElementById('demo_one').style.display = 'none';
+               document.getElementById('class_one').style.display = 'block';
+            }
+
+            else if (document.getElementById('class_one').style.display == 'none'){
+                    document.getElementById('class_one').style.display = 'block';
+                    document.getElementById('demo_one').style.display = 'none';
+            }
+        }
+
+    </script>
+</body>
+</html>
